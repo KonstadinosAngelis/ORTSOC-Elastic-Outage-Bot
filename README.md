@@ -1,5 +1,5 @@
 # ORTSOC-Slack-App
-Slack app that acts as a connector for Kibana - Development / Deployment Instructions included
+Slack bot that connects to Elastic Search - Development / Deployment Instructions included
 
 ## Setup
 
@@ -16,7 +16,13 @@ Before you can run the app, you'll need to store some environment variables from
 1. Open up [env.example](./env.example)
 2. Go to your Slack apps configuration page [link](https://api.slack.com/apps), click *OAuth & Permissions* in the left hand menu, then copy the Bot User OAuth Token (starts with xoxb-). You will store this as `SLACK_BOT_TOKEN`.
 3. Click *Basic Information* from the left hand menu and follow the steps in the *App-Level Tokens* section to create an app-level token with the `connections:write scope` (starts with xapp-), copy this token and store it as `SLACK_APP_TOKEN`.
-4. IMPORTANT: Rename `env.example` to just `.env` - You can use a command like `cp env.example .env` or the GUI
+4. Copy the URL of your Elastic Search instance and store it as `ELASTICSEARCH_URL`. Your specific URL will vary depending on your Elastic deployment.
+5. Create an API key if you don't already have one. This can be created in *Kibana -> Stack Management -> API Keys* and only needs READ access scoped to `logs-*` and `metrics-*`. Copy this key into `ELASTICSEARCH_API_KEY`.
+6. IMPORTANT: Rename `env.example` to just `.env` - You can use a command like `cp env.example .env` or the GUI
+
+ API key (only needs READ access scoped to logs-* and metrics-*)
+# Can be created in Kibana -> Stack Management -> API Keys
+ELASTICSEARCH_API_KEY=
 
 #### Dependencies 
 ```
@@ -41,12 +47,6 @@ ruff check
 
 # Run ruff from root directory for code formatting
 ruff format
-```
-
-#### Testing
-```zsh
-# Run pytest from root directory for unit testing
-pytest .
 ```
 
 ## Project Structure
