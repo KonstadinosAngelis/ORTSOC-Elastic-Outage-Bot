@@ -20,10 +20,6 @@ Before you can run the app, you'll need to store some environment variables from
 5. Create an API key if you don't already have one. This can be created in *Kibana -> Stack Management -> API Keys* and only needs READ access scoped to `logs-*` and `metrics-*`. Copy this key into `ELASTICSEARCH_API_KEY`.
 6. IMPORTANT: Rename `env.example` to just `.env` - You can use a command like `cp env.example .env` or the GUI
 
- API key (only needs READ access scoped to logs-* and metrics-*)
-# Can be created in Kibana -> Stack Management -> API Keys
-ELASTICSEARCH_API_KEY=
-
 #### Dependencies 
 ```
 # Python 3.7+ required
