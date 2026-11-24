@@ -9,6 +9,7 @@ Slack bot that connects to Elastic Search - Development / Deployment Instruction
 3. Copy the contents of [manifest.json](./manifest.json) into the text box that says `*Paste your manifest code here*` (within the JSON tab) and click *Next*
 4. Review the configuration and click *Create*
 5. Click *Install to Workspace* and *Allow* on the screen that follows. You'll then be redirected to the App Configuration dashboard.
+6. (Optional) Once at the dashboard, set the app icon to the provided [icon.png](./icon.png) in *Basic Information -> Display Information -> App icon & Preview*
 
 #### Environment Variables
 Before you can run the app, you'll need to store some environment variables from the app you just created
