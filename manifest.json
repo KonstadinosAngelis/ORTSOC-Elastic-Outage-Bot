@@ -2,7 +2,7 @@
     "display_information": {
         "name": "ORTSOC Outage Alert Bot",
         "description": "Sends outage alerts to configured Slack channel. Includes built-in commands aim to help staff investigate outage reasons.",
-        "background_color": "#CC005F"
+        "background_color": "#BF0D0D"
     },
     "features": {
         "app_home": {
