@@ -1,5 +1,5 @@
-# ORTSOC-Slack-App
-Slack bot that connects to Elastic Search - Development / Deployment Instructions included
+# ORTSOC Elastic Outage Bot
+ORTSOC Slack bot that connects to Elastic Search - Development / Deployment Instructions included
 
 ## Setup
 
